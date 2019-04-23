@@ -1,5 +1,10 @@
 workflow coverage {
 	call Coverage 
+	meta {
+		author: "Sehyun Oh"
+        email: "shbrief@gmail.com"
+        description: "Coverage.R of PureCN: Calculate and GC-normalize coverage from a BAM file"
+    }
 }
 
 task Coverage {
