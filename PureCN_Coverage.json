@@ -1,0 +1,10 @@
+{
+  "coverage.Coverage.bioc_docker": "quay.io/shbrief/pcn_docker",
+  "coverage.Coverage.outdir": ".",
+  "coverage.Coverage.disk_space_gb": "Int? (optional)",
+  "coverage.Coverage.machine_mem_gb": "Int? (optional)",
+  "coverage.Coverage.pcn_extdata": "/usr/local/lib/R/site-library/PureCN/extdata",
+  "coverage.Coverage.bam": "${this.WXS_bam_path}",
+  "coverage.Coverage.bai": "${this.WXS_bai_path}",
+  "coverage.Coverage.intervals": "gs://fc-secure-0893eb66-fffa-4cc2-a919-5c803249c3b9/Test/whole_exome_agilent_1.1_hg19_gcgene.txt"
+}
