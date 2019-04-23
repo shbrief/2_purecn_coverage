@@ -16,7 +16,6 @@ task Coverage {
 	String pcn_extdata
 
 	# Runtime parameters
-	String bioc_docker	# "bioconductor/devel_core2"
 	Int? machine_mem_gb
 	Int? disk_space_gb
 	Int disk_size = ceil(size(bam, "GB")) + 20
@@ -29,7 +28,7 @@ task Coverage {
 	>>>
 
 	runtime {
-		docker: bioc_docker
+		docker: "quay.io/shbrief/pcn_docker"
 		cpu : 2
 		memory: "32 GB"
     	disks: "local-disk " + select_first([disk_space_gb, disk_size]) + " SSD"
