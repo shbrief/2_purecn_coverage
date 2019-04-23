@@ -1,5 +1,4 @@
 {
-  "coverage.Coverage.bioc_docker": "quay.io/shbrief/pcn_docker",
   "coverage.Coverage.outdir": ".",
   "coverage.Coverage.disk_space_gb": "Int? (optional)",
   "coverage.Coverage.machine_mem_gb": "Int? (optional)",
