@@ -13,7 +13,6 @@ task Coverage {
 	File intervals
 	String BAM_pre = basename(bam, ".bam")
 	String outdir   # .
-	String pcn_extdata
 
 	# Runtime parameters
 	Int? machine_mem_gb
@@ -21,7 +20,7 @@ task Coverage {
 	Int disk_size = ceil(size(bam, "GB")) + 20
 
 	command <<<
-		Rscript ${pcn_extdata}/Coverage.R \
+		Rscript /usr/local/lib/R/site-library/PureCN/extdata/Coverage.R \
 		--outdir ${outdir} \
 		--bam ${bam} \
 		--intervals ${intervals}
